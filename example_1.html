@@ -1,0 +1,208 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Swipe 2</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=8">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'/>
+    <style>
+        html, body {
+            background: #f3f3f3;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        #mySwipe {
+            display: block;
+            color: #111;
+            text-align: center;
+            box-shadow: 0 1px #EBEBEB;
+            background: #fff;
+            border-radius: 3px;
+            border: 1px solid;
+            border-color: #E5E5E5 #D3D3D3 #B9C1C6;
+            height: 240px;
+            margin: 0 auto;
+            width: 100%;
+            padding: 10px;
+        }
+
+        .cover {
+            width: 240px;
+            height: 240px;
+            background: #fff;
+            background-size: 200px;
+
+            display: table-cell;
+            vertical-align: middle;
+            position: absolute;
+        }
+
+        .cover img {
+            width: 180px;
+            height: 180px;
+            vertical-align: middle;
+        }
+
+        .lrc {
+            text-align: center;
+            background: #fff;
+        }
+
+        /* Swipe 2 required styles */
+        .swipe {
+            overflow: hidden;
+            visibility: hidden;
+            position: relative;
+        }
+
+        .swipe-wrap {
+            overflow: hidden;
+            position: relative;
+        }
+
+        .swipe-wrap > div {
+            float: left;
+            width: 100%;
+            position: relative;
+        }
+
+        /* END required styles */
+
+        /* iscroll required styles */
+
+        #chart_wrapper {
+            position: absolute;
+            z-index: 1;
+            left: 10px;
+            right: 10px;
+            width: 100%;
+            overflow: auto;
+            background: #fff;
+            height: 240px;
+        }
+
+        #scroller {
+            /*position: relative;*/
+            /*z-index: 1;*/
+            /*-webkit-tap-highlight-color: rgba(0, 0, 0, 0);*/
+            width: 100%;
+            padding: 0;
+            /*height: 100%*/
+        }
+
+        /* END required styles */
+    </style>
+
+</head>
+<body>
+<div id='mySwipe' class='swipe'>
+    <div class='swipe-wrap'>
+        <div class="cover">
+            <img alt="" src="http://musicdata.baidu.com/data2/pic/115438178/115438178.jpg">
+        </div>
+        <div id="chart_wrapper">
+            <div id="scroller">
+                <ul>
+                    <li>
+                        <div class="lrc">
+                            <li class="">逍遥叹</li>
+                            <li class="">演唱：胡歌</li>
+                            <li class="on">&nbsp;</li>
+                            <li>岁月难得沉默秋风厌倦漂泊</li>
+                            <li>夕阳赖着不走挂在墙头舍不得我</li>
+                            <li>昔日伊人耳边话已和潮声向东流</li>
+                            <li>再回首往事也随枫叶一片片落</li>
+                            <li>爱已走到尽头恨也放弃承诺</li>
+                            <li>命运自认幽默想法太多由不得我</li>
+                            <li>壮志凌云几分愁知己难逢几人留</li>
+                            <li>再回首却闻笑传醉梦中</li>
+                            <li>笑叹词穷古痴今狂终成空</li>
+                            <li>刀钝刃乏恩断义绝梦方破</li>
+                            <li>路荒已叹饱览足迹没人懂</li>
+                            <li>多年望眼欲穿过</li>
+                            <li>红尘滚滚我没看透</li>
+                            <li>自嘲墨尽千情万怨已皆愁</li>
+                            <li>曲终人散发花鬓白红颜殁</li>
+                            <li>烛残未觉与日争辉图消瘦</li>
+                            <li>当泪干血隐狂涌</li>
+                            <li>白雪纷飞都成空</li>
+                            <li>&nbsp;</li>
+                            <li>爱已走到尽头恨也放弃承诺</li>
+                            <li>命运自认幽默想法太多</li>
+                            <li>由不得我</li>
+                            <li>壮志凌云几分愁</li>
+                            <li>知己难逢几人留</li>
+                            <li>再回首却闻笑传醉梦中</li>
+                            <li>笑叹词穷古痴今狂终成空</li>
+                            <li>刀钝刃乏恩断义绝梦方破</li>
+                            <li>路荒已叹饱览足迹没人懂</li>
+                            <li>多年望眼欲穿过</li>
+                            <li>红尘滚滚我没看透</li>
+                            <li>自嘲墨尽千情万怨已皆愁</li>
+                            <li>曲终人散发花鬓白红颜殁</li>
+                            <li>烛残未觉与日争辉图消瘦</li>
+                            <li>当泪干血隐狂涌</li>
+                            <li>白雪纷飞都成空</li>
+                            <li>笑叹词穷古痴今狂终成空</li>
+                            <li>刀钝刃乏恩断义绝梦方破</li>
+                            <li>路荒已叹饱览足迹没人懂</li>
+                            <li>多年望眼欲穿过</li>
+                            <li>红尘滚滚我没看透</li>
+                            <li>自嘲墨尽千情万怨已皆愁</li>
+                            <li>曲终人散发花鬓白红颜殁</li>
+                            <li>烛残未觉与日争辉图消瘦</li>
+                            <li>当泪干血隐狂涌</li>
+                            <li>白雪纷飞都成空</li>
+                            <li>&nbsp;</li>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div style='text-align:center;padding-top:20px;'>
+    <button id='button1' onclick='swipeChange()'>歌词</button>
+</div>
+
+<script src="js/jquery-2.0.1.min.js"></script>
+<script src='js/swipe.js'></script>
+<script src='js/iscroll.js'></script>
+<script>
+    // pure JS
+    var elem = document.getElementById('mySwipe');
+    window.mySwipe = Swipe(elem, {//以下属性可选
+//            startSlide: 0,//默认起始
+//            auto: 3000,//自动切换的时间间隔
+//            continuous: true,
+//            speed: 500,//切换速度
+//            callback: function (index, element) {
+//            },//回调函数，切换时触发
+//            transitionEnd: function (index, element) {
+//            }
+    });
+
+    // with jQuery
+    //window.mySwipe = $('#mySwipe').Swipe().data('Swipe');
+    var myScroll = new iScroll('chart_wrapper', {hScrollbar: false, vScrollbar: false});
+
+    var pos = 0;//0表示图片，1表示歌词
+    function swipeChange() {
+        if (pos == 0) {
+            mySwipe.next();
+            pos = 1;
+            $('#button1').val("歌词");
+        } else {
+            mySwipe.prev();
+            pos = 0;
+            $('#button1').val("图片");
+        }
+
+    }
+
+</script>
+</body>
+</html>

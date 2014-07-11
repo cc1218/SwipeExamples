@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Swipe JS - 切换歌词demo</title>
+    <meta nam="description"
+          content="Swipe is a lightweight mobile slider with 1:1 touch movement, resistant bounds, scroll prevention, and completely library agnostic.">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="page-swipe">
+<div id="slider" class="swipe" style="visibility: visible;">
+    <div class="swipe-wrap">
+        <figure>
+            <div class="wrap">
+                <div class="image">
+                    <img src="http://musicdata.baidu.com/data2/pic/115438178/115438178.jpg"/>
+                </div>
+            </div>
+        </figure>
+        <figure>
+            <div class="wrap">
+                <div id="chart_wrapper">
+                    <div id="scroller">
+                        <ul>
+                            <li>
+                                <div class="lrc">
+                                    <li class="">逍遥叹</li>
+                                    <li class="">演唱：胡歌</li>
+                                    <li class="on">&nbsp;</li>
+                                    <li>岁月难得沉默秋风厌倦漂泊</li>
+                                    <li>夕阳赖着不走挂在墙头舍不得我</li>
+                                    <li>昔日伊人耳边话已和潮声向东流</li>
+                                    <li>再回首往事也随枫叶一片片落</li>
+                                    <li>爱已走到尽头恨也放弃承诺</li>
+                                    <li>命运自认幽默想法太多由不得我</li>
+                                    <li>壮志凌云几分愁知己难逢几人留</li>
+                                    <li>再回首却闻笑传醉梦中</li>
+                                    <li>笑叹词穷古痴今狂终成空</li>
+                                    <li>刀钝刃乏恩断义绝梦方破</li>
+                                    <li>路荒已叹饱览足迹没人懂</li>
+                                    <li>多年望眼欲穿过</li>
+                                    <li>红尘滚滚我没看透</li>
+                                    <li>自嘲墨尽千情万怨已皆愁</li>
+                                    <li>曲终人散发花鬓白红颜殁</li>
+                                    <li>烛残未觉与日争辉图消瘦</li>
+                                    <li>当泪干血隐狂涌</li>
+                                    <li>白雪纷飞都成空</li>
+                                    <li>&nbsp;</li>
+                                    <li>爱已走到尽头恨也放弃承诺</li>
+                                    <li>命运自认幽默想法太多</li>
+                                    <li>由不得我</li>
+                                    <li>壮志凌云几分愁</li>
+                                    <li>知己难逢几人留</li>
+                                    <li>再回首却闻笑传醉梦中</li>
+                                    <li>笑叹词穷古痴今狂终成空</li>
+                                    <li>刀钝刃乏恩断义绝梦方破</li>
+                                    <li>路荒已叹饱览足迹没人懂</li>
+                                    <li>多年望眼欲穿过</li>
+                                    <li>红尘滚滚我没看透</li>
+                                    <li>自嘲墨尽千情万怨已皆愁</li>
+                                    <li>曲终人散发花鬓白红颜殁</li>
+                                    <li>烛残未觉与日争辉图消瘦</li>
+                                    <li>当泪干血隐狂涌</li>
+                                    <li>白雪纷飞都成空</li>
+                                    <li>笑叹词穷古痴今狂终成空</li>
+                                    <li>刀钝刃乏恩断义绝梦方破</li>
+                                    <li>路荒已叹饱览足迹没人懂</li>
+                                    <li>多年望眼欲穿过</li>
+                                    <li>红尘滚滚我没看透</li>
+                                    <li>自嘲墨尽千情万怨已皆愁</li>
+                                    <li>曲终人散发花鬓白红颜殁</li>
+                                    <li>烛残未觉与日争辉图消瘦</li>
+                                    <li>当泪干血隐狂涌</li>
+                                    <li>白雪纷飞都成空</li>
+                                    <li>&nbsp;</li>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </figure>
+    </div>
+</div>
+<div style='text-align:center;padding-top:5px;'>
+    <input type="button" id="button1" value="歌词" onclick="change(this)"/>
+</div>
+<script src="js/swipe.js"></script>
+<script src="js/iscroll.js"></script>
+<script language="JavaScript">
+    var slider =
+            Swipe(document.getElementById('slider'), {
+            });
+    var myScroll = new iScroll('chart_wrapper', {hScrollbar: false, vScrollbar: false});
+    function change(e) {
+        slider.next();
+        if (e.value == "歌词") {
+            e.value = "图片";
+        } else {
+            e.value = "歌词";
+        }
+    }
+</script>
+</body>
+</html>

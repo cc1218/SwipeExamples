@@ -1,0 +1,444 @@
+html {
+    font-size: 100%;
+    overflow-y: scroll;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+    display: block
+}
+
+b, strong {
+    font-weight: 700
+}
+
+blockquote {
+    margin: 1em 40px
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0
+}
+
+pre, code, kbd, samp {
+    font-size: 16px;
+    font-family: monospace, serif;
+    _font-family: "courier new", monospace
+}
+
+pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word
+}
+
+small {
+    font-size: 85%
+}
+
+sub, sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline
+}
+
+sup {
+    top: -.5em
+}
+
+sub {
+    bottom: -.25em
+}
+
+ul, ol {
+    margin: 1em 0;
+    padding: 0
+}
+
+li{
+    list-style: none;
+}
+
+nav ul, nav ol {
+    list-style: none;
+    list-style-image: none;
+    margin: 0;
+    padding: 0
+}
+
+img {
+    border: 0;
+    -ms-interpolation-mode: bicubic;
+    vertical-align: middle
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+    img {
+        max-width: 100%
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    img {
+        max-width: 100%
+    }
+}
+
+figure, form, fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0
+}
+
+label {
+    cursor: pointer
+}
+
+legend {
+    border: 0;
+    *margin-left: -7px;
+    padding: 0
+}
+
+button, input, select, textarea {
+    font-size: 100%;
+    margin: 0;
+    vertical-align: baseline;
+    *vertical-align: middle
+}
+
+button, input {
+    line-height: normal
+}
+
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+    cursor: pointer;
+    -webkit-appearance: button;
+    *overflow: visible
+}
+
+input[type="checkbox"], input[type="radio"] {
+    box-sizing: border-box;
+    padding: 0
+}
+
+input[type="search"] {
+    -webkit-appearance: textfield;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box
+}
+
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none
+}
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+    border: 0;
+    padding: 0
+}
+
+textarea {
+    overflow: auto;
+    vertical-align: top;
+    resize: vertical
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+table td {
+    vertical-align: top
+}
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-text-size-adjust: none;
+    -webkit-touch-callout: none
+}
+
+body, button, input, select, textarea {
+    font-family: ff-meta-serif-web-pro, serif;
+    color: #3f3f3f;
+    margin: 0;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+article {
+    padding: 0 20px;
+    margin: 0 auto;
+    max-width: 720px;
+    overflow: hidden
+}
+
+article small {
+    font-size: .9em;
+    font-family: proxima-nova, sans-serif;
+    margin: 0 0 1.5em;
+    display: block;
+    text-align: center
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: .9em 0 .1em;
+    color: #212121;
+    line-height: 1;
+    font-family: proxima-nova, sans-serif
+}
+
+h2 {
+    color: #14a8e5;
+    font-weight: 600;
+    font-size: 1.6em;
+    margin: 1.5em 0 .4em;
+    font-family: proxima-nova, sans-serif;
+    line-height: 1.2
+}
+
+h3 {
+    font-family: museo-slab, serif;
+    margin: 1.8em 0 .5em;
+    color: #404040;
+    font-size: 1.2em;
+    font-weight: 500
+}
+
+h6 {
+    font-family: museo-slab, serif;
+    font-size: 1.3em;
+    margin: 0 0 .3em;
+    font-weight: 400;
+    color: #8c9397;
+    margin-bottom: 40px;
+    font-style: italic
+}
+
+p {
+    font-size: 1.05em;
+    margin: 0 0 1.5em
+}
+
+a, a:visited {
+    color: #14a8e5;
+    text-decoration: none
+}
+
+a:hover, a:focus, a:active, a:visited:hover, a:visited:focus, a:visited:active {
+    outline: 0;
+    text-decoration: underline
+}
+
+a.alt, a:visited.alt {
+    color: #8c9397
+}
+
+blockquote {
+    font-style: italic;
+    font-weight: 300;
+    font-size: 19px;
+    font-family: museo-slab;
+    margin: 1.2em 0 1.7em 1.5em;
+    color: #a6a9ab
+}
+
+pre.code, .preview {
+    margin: 1.2em 0 2em;
+    border: 1px solid;
+    border-color: #cdd2d6 #bfc6cb #b3bbc1 #bfc6cb;
+    border-radius: 2px;
+    position: relative;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .08)
+}
+
+.two-column pre.code.preview, .two-column .preview.preview {
+    margin-right: 20px
+}
+
+pre.code label, .preview label {
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    color: #4b555c;
+    position: absolute;
+    left: 1px;
+    top: 16px;
+    text-align: center;
+    width: 60px
+}
+
+pre.code code, .preview code {
+    font-family: "Inconsolata", "Monaco", "Consolas", "Andale Mono", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
+    display: block;
+    margin: 0 0 0 60px;
+    padding: 15px 16px 14px;
+    border-left: 1px #e5eaee solid;
+    overflow-x: auto;
+    font-size: 13px;
+    line-height: 19px;
+    color: #333
+}
+
+pre.code.code-css code, .preview.code-css code {
+    color: #d84400
+}
+
+pre.code.code-html code, .preview.code-html code {
+    color: #4576d5
+}
+
+[data-zoom]:after {
+    content: attr(data-zoom);
+    color: #ddd;
+    font-family: proxima-nova, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    position: absolute;
+    top: 10px;
+    left: 12px;
+    text-transform: uppercase
+}
+
+.button, .button:active, .button:visited {
+    margin: 0;
+    padding: 13px 30px 12px;
+    border-radius: 4px;
+    display: inline-block;
+    vertical-align: top;
+    color: #494f50 !important;
+    text-decoration: none !important;
+    border: 1px #97a2a4 solid;
+    border-top: 1px #a4b0b4 solid;
+    border-bottom: 1px #8f9698 solid;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, .05), inset 0 1px 0 white;
+    background-color: #ececec;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f9f9f9), to(#e0e0e0));
+    background-image: -webkit-linear-gradient(top, #f9f9f9, #e0e0e0);
+    background-image: -moz-linear-gradient(top, #f9f9f9, #e0e0e0);
+    background-image: -ms-linear-gradient(top, #f9f9f9, #e0e0e0);
+    background-image: -o-linear-gradient(top, #f9f9f9, #e0e0e0);
+    background-image: linear, top, #f9f9f9, #e0e0e0;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#F9F9F9', EndColorStr='#E0E0E0');
+    font-size: 17px;
+    font-weight: 700;
+    text-shadow: 0 1px 0 white;
+    font-family: proxima-nova;
+    text-transform: none;
+    letter-spacing: 0
+}
+
+.button:hover, .button:active:hover, .button:visited:hover {
+    text-decoration: none
+}
+
+.page-swipe  {
+    padding-bottom: 25px;
+
+}
+
+.swipe {
+    overflow: hidden;
+    visibility: hidden;
+    position: relative;
+}
+
+.swipe-wrap {
+    overflow: hidden;
+    position: relative;
+}
+
+.swipe-wrap > figure {
+    float: left;
+    width: 100%;
+    position: relative;
+}
+
+@media only screen and (max-width: 767px) {
+    .page-swipe  {
+        padding: 15px 0
+    }
+}
+
+.page-swipe  #slider {
+    max-height: 395px;
+    margin-top: 40px
+}
+
+@media only screen and (max-width: 767px) {
+    .erweima img {
+        display: none;
+    }
+
+    .page-swipe  #slider {
+        margin-top: 40
+    }
+}
+
+.page-swipe  #slider   {
+    display: block
+}
+
+.page-swipe  #slider   div.wrap {
+    max-width: 640px;
+    height: 360px;
+    display: block;
+    margin: 20px auto;
+}
+
+@media only screen and (max-width: 767px) {
+    .page-swipe  #slider   div.wrap {
+        max-width: 480px;
+        height: 240px;
+        margin-bottom: 5px
+    }
+}
+
+.page-swipe  #slider .image {
+    display: block;
+    height: inherit;
+    text-align: center;
+}
+/*iscroll*/
+
+#scroller {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+}
+
+#chart_wrapper {
+    position: absolute;
+    z-index: 1;
+    left: 10px;
+    right: 10px;
+    max-width: 640px;
+    overflow: auto;
+    height: 360px;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 767px) {
+    .page-swipe  #chart_wrapper  {
+        max-width: 480px;
+        height: 240px;
+        margin-bottom: 5px
+    }
+}
+
+#chart_wrapper .lrc{
+    display: block;
+    height: inherit;
+}
